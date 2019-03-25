@@ -1,0 +1,72 @@
+.productosP{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.productosP_container{
+  width: 80%;
+  padding-bottom: calc(var(--space) * 3);
+  display: grid;
+  grid-template-rows: repeat(3, 350px);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "fig_1 info_1 info_1"
+                       "info_2 info_2 fig_2"
+                       "fig_3 info_3 info_3"
+}
+
+.productosP h1{
+  font-size: 30px;
+  margin: 0;
+  padding: calc(var(--space) * 2) 0 calc(var(--space) * 2) 0;
+}
+
+.productosP_info h2{
+  font-size: var(--large);
+}
+
+.productosP_info p{
+  font-size: var(--normal);
+}
+
+.productosP_fig{
+  margin: 0;
+  width: 230px;
+  justify-self: center;
+  align-self: center;
+}
+
+.productosP_fig img{
+  width: 100%;
+}
+
+.productosP_fig.a{
+  grid-area: fig_1;
+}
+
+.productosP_info.a{
+  grid-area: info_1;
+  align-self: center;
+  padding-left: calc(var(--space) * 3);
+}
+
+.productosP_fig.b{
+  grid-area: fig_2;
+}
+
+.productosP_info.b{
+  grid-area: info_2;
+  align-self: center;
+  padding-right: calc(var(--space) * 3);
+}
+
+.productosP_fig.c{
+  grid-area: fig_3;
+}
+
+.productosP_info.c{
+  grid-area: info_3;
+  align-self: center;
+  padding-left: calc(var(--space) * 3);
+}

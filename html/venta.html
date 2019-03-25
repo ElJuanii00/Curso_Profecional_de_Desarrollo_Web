@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Cat Industry</title>
+   <link rel="stylesheet" href="../css/main.css">
+   <link rel="stylesheet" href="../css/main_formulario.css">
+   <link rel="stylesheet" href="../css/normalize.css">
+   <link rel="stylesheet" href="../css/mobile.css">
+   <link rel="stylesheet" href="../css/animation.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+ </head>  <!--cierre de head -->
+ <body>
+   <nav class="nav fadeInDown">
+     <div class="brand_image">
+       <a href="../index.html"><img src="../images/logo.png" alt=""></a>
+     </div>
+     <div class="nav_options">
+       <!-- <div class="option">Faqs</div>
+       <div class="option">Producto y descripcion</div> -->
+       <ul>
+         <li><a href="../html/faqs.html">Faqs</a></li>
+         <li><a href="../html/productos.html">Producto y descripcion</a></li>
+       </ul>
+     </div>
+   </nav>
+   <!-- Aqui acaba el navbar -->
+   <section class="form">
+     <div class="productosV_info fadeInLeft">
+       <figure class="productosV_fig">
+         <img src="../images/ben1.png" alt="">
+       </figure>
+       <h1>Producto 1</h1>
+       <p>Miles de productos hay en el mercado, pero nada como una caja con gatitos</p>
+     </div>
+     <form class="productosV_form fadeInRight" action="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9XSV2ZVENUMHS" method="post">
+       <!-- <p class="productosV_title">Nombre</p> -->
+       <label for="name" class="productosV_title">Nombre</label>
+       <input class="productosV_input" type="text" name="name" value="" id="name" required>
+       <!-- <p class="productosV_title">Mail</p> -->
+       <label for="email" class="productosV_title">Email</label>
+       <input class="productosV_input" type="email" name="email" value="" id="mail" required>
+       <!-- <p class="productosV_title">Telefono</p> -->
+       <label for="phone" class="productosV_title">Telefono</label>
+       <input class="productosV_input" type="text" name="phone" value="" id="phone" required>
+       <input type="submit" name="submit" value="Confirmar Pago" class="productosV_btn">
+     </form>
+   </section>
+   <!-- Aqui acaba el formulario venta -->
+   <footer class="footer">
+     <a href="#">Terminos y condiciones</a>
+     <p>contacto@email.com</p>
+   </footer>
+   <!-- Aqui acaba footer -->
+ </body>
+ <script type="text/javascript" src="../scripts/script.js"></script>
+</html>
